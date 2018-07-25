@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  flex: 1;
+  height: 100vh;
+  background-color: #e5f4f2;
+  overflow: auto;
+}
+
+article {
+  flex: 3;
+  height: 100vh;
+  background-color: #FFF;
+  overflow: auto;
+}

@@ -1,0 +1,53 @@
+// Base
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
+
+// Components
+
+@import "components/buttons";
+@import "components/grid";
+@import "components/navigation";
+@import "components/typography";
+
+//Sidebar Nav
+
+.sidebar {
+  padding-left: 5rem;
+
+  .sub-heading {
+    text-transform: uppercase;
+    color: #9a3500;
+    font-weight: bold;
+  }
+  .sub-heading1 {
+    padding-top: 6rem;
+  }
+  ul {
+    list-style: none;
+    padding-left: 1rem;
+
+    li {
+      padding-top: 1rem;
+    }
+  }
+  ul li:last-child {
+    padding-bottom: 2rem;
+  }
+  a {
+    text-decoration: none;
+    color: #9a8200;
+  }
+  a:hover {
+      color: #9a3500;
+      font-size: 1.04rem;
+  }
+}
+
+
+//Main Content
+
+.article-content {
+  margin: 10rem 6rem;
+}
