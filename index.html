@@ -11,22 +11,23 @@
   <body>
     <div class="container">
       <div class="sidebar">
-
-        <div>
+        <img src="public/assets/images/react-logo.png" width="200px" height="200px;">
+        <nav id="navbar">
+        <header>
           <p class="sub-heading sub-heading1">Installation</p>
-        </div>
+        </header>
         <ul>
-          <li><a href="#Getting_Started">Getting Started</a></li>
-          <li><a href="#Add_React_to_a_Website"> Add React to a Website</a></li>
-          <li><a href="#Create_a_New_React_App">Create a New React App</a></li>
-          <li><a href="#CDN_Links">CDN Links</a></li>
+          <li><a href="#Getting_Started" class="nav-link">Getting Started</a></li>
+          <li><a href="#Add_React_to_a_Website" class="nav-link">Add React to a Website</a></li>
+          <li><a href="#Create_a_New_React_App" class="nav-link">Create a New React App</a></li>
+          <li><a href="#CDN_Links" class="nav-link">CDN Links</a></li>
         </ul>
 
         <div>
           <p class="sub-heading">Main Concepts</p>
         </div>
         <ul>
-          <li><a href="#Hello_World">1. Hello World</a></li>
+          <li><a href="#Hello_World" class="nav-link">1. Hello World</a></li>
           <li><a href="#Introducing_JSX">2. Introducing JSX</a></li>
           <li><a href="#Rendering_Elements">3. Rendering Elements</a></li>
           <li><a href="#Components_and_Props">4. Components and Props</a></li>
@@ -39,6 +40,7 @@
           <li><a href="#Composition_vs_Inheritance">11. Composition vs Inheritance</a></li>
           <li><a href="#Thinking_In_React">12. Thinking In React</a></li>
         </ul>
+        </nav>
       </div> <!--sidebar -->
 
 
@@ -242,10 +244,12 @@
 <p>Congratulations! You just added a <strong>production-ready JSX setup</strong> to your project.</p>
 <h3 id="run-jsx-preprocessor"><a href="#run-jsx-preprocessor" aria-hidden="true" class="anchor"></a>Run JSX Preprocessor</h3>
 <p>Create a folder called <code class="gatsby-code-text">src</code> and run this terminal command:</p>
+<div class="code-snippet">
 <div class="gatsby-highlight">
       <pre class="gatsby-code-text"><code class="gatsby-code-text">npx babel --watch src --out-dir . --presets react-app/prod </code></pre>
       </div>
 <blockquote>
+</div>
 <p>Note</p>
 <p><code class="gatsby-code-text">npx</code> is not a typo — it’s a <a href="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b">package runner tool that comes with npm 5.2+</a>.</p>
 <p>If you see an error message saying “You have mistakenly installed the <code class="gatsby-code-text">babel</code> package”, you might have missed <a href="#add-jsx-to-a-project">the previous step</a>. Perform it in the same folder, and then try again.</p>
@@ -401,6 +405,7 @@
       </article>
     </div> <!--container -->
 
+  <script src= "https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
   <script src="public/scripts/scripts.js"></script>
   </body>
 </html>
