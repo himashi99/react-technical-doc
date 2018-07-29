@@ -17,7 +17,10 @@ article {
   background-color: #fff;
   overflow: auto; }
 
-h1 {
+* {
+  line-height: 2rem; }
+
+h1, h2, h3 {
   font-family: 'Open Sans', sans-serif; }
 
 .sidebar {
@@ -73,7 +76,7 @@ h1 {
     padding-top: 4rem;
     padding-bottom: 1.5rem; }
   #main-doc h3 {
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     padding-bottom: 1rem; }
   #main-doc hr {
     height: 1px;

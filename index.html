@@ -69,6 +69,9 @@
 <h3 id="create-a-new-react-app"><a href="#create-a-new-react-app" aria-hidden="true" class="anchor"></a>Create a New React App</h3>
 <p>When starting a React project, <a href="/docs/add-react-to-a-website.html">a simple HTML page with script tags</a> might still be the best option. It only takes a minute to set up!</p>
 <p>As your application grows, you might want to consider a more integrated setup. There are <a href="/docs/create-a-new-react-app.html">several JavaScript toolchains</a> we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem.</p>
+
+<hr>
+
 <h2 id="learn-react"><a href="#learn-react" aria-hidden="true" class="anchor"></a>Learn React</h2>
 <p>People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.</p>
 <ul>
@@ -104,8 +107,14 @@
 <p>The <a href="/blog/">React blog</a> is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted there first.</p>
 <p>You can also follow the <a href="https://twitter.com/reactjs">@reactjs account</a> on Twitter, but you won’t miss anything essential if you only read the blog.</p>
 <p>Not every React release deserves its own blog post, but you can find a detailed changelog for every release <a href="https://github.com/facebook/react/blob/master/CHANGELOG.md">in the <code class="gatsby-code-text">CHANGELOG.md</code> file in the React repository</a>, as well as on the <a href="https://github.com/facebook/react">Releases</a> page.</p>
+
+<hr>
+
 <h2 id="versioned-documentation"><a href="#versioned-documentation" aria-hidden="true" class="anchor"></a>Versioned Documentation</h2>
 <p>This documentation always reflects the latest stable version of React. Since React 16, you can find older versions of the documentation <a href="/versions">on a separate page</a>. Note that documentation for past versions is snapshotted at the time of the release, and isn’t being continuously updated.</p>
+
+<hr>
+
 <h2 id="something-missing"><a href="#something-missing" aria-hidden="true" class="anchor"></a>Something Missing?</h2>
 <p>If something is missing in the documentation or if you found some part confusing, please <a href="https://github.com/reactjs/reactjs.org/issues/new">file an issue for the documentation repository</a> with your suggestions for improvement, or tweet at the <a href="https://twitter.com/reactjs">@reactjs account</a>. We love hearing from you!</p></div></div>
 </section>
@@ -196,6 +205,9 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/react-dom@16/umd/react-dom.production.min.js<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
       </div>
 <p>If you don’t have a minification step for your scripts, <a href="https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3">here’s one way to set it up</a>.</p>
+
+<hr>
+
 <h2 id="optional-try-react-with-jsx"><a href="#optional-try-react-with-jsx" aria-hidden="true" class="anchor"></a>Optional: Try React with JSX</h2>
 <p>In the examples above, we only relied on features that are natively supported by the browsers. This is why we used a JavaScript function call to tell React what to display:</p>
 <div class="code-snippet">
@@ -271,9 +283,15 @@
 <li>Optimizing the output for production.</li>
 </ul>
 <p>The toolchains recommended on this page <strong>don’t require configuration to get started</strong>.</p>
+
+<hr>
+
 <h2 id="you-might-not-need-a-toolchain"><a href="#you-might-not-need-a-toolchain" aria-hidden="true" class="anchor"></a>You Might Not Need a Toolchain</h2>
 <p>If you don’t experience the problems described above or don’t feel comfortable using JavaScript tools yet, consider <a href="/docs/add-react-to-a-website.html">adding React as a plain <code class="gatsby-code-text">&lt;script&gt;</code> tag on an HTML page</a>, optionally <a href="/docs/add-react-to-a-website.html#optional-try-react-with-jsx">with JSX</a>.</p>
 <p>This is also <strong>the easiest way to integrate React into an existing website.</strong> You can always add a larger toolchain if you find it helpful!</p>
+
+<hr>
+
 <h2 id="recommended-toolchains"><a href="#recommended-toolchains" aria-hidden="true" class="anchor"></a>Recommended Toolchains</h2>
 <p>The React team primarily recommends these solutions:</p>
 <ul>
@@ -285,12 +303,14 @@
 <h3 id="create-react-app"><a href="#create-react-app" aria-hidden="true" class="anchor"></a>Create React App</h3>
 <p><a href="http://github.com/facebookincubator/create-react-app">Create React App</a> is a comfortable environment for <strong>learning React</strong>, and is the best way to start building <strong>a new <a href="/docs/glossary.html#single-page-application">single-page</a> application</strong> in React.</p>
 <p>It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production. You’ll need to have Node &gt;= 6 and npm &gt;= 5.2 on your machine. To create a project, run:</p>
+<div class="code-snippet">
 <div class="gatsby-highlight">
       <pre class="gatsby-code-bash"><code class="gatsby-code-bash">npx create-react-app my-app
 <span class="token function">cd</span> my-app
 <span class="token function">npm</span> start</code></pre>
       </div>
 <blockquote>
+</div>
 <p>Note</p>
 <p><code class="gatsby-code-text">npx</code> on the first line is not a typo — it’s a <a href="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b">package runner tool that comes with npm 5.2+</a>.</p>
 </blockquote>
@@ -318,6 +338,9 @@
 <p><strong><a href="https://github.com/jaredpalmer/razzle">Razzle</a></strong> is a server-rendering framework that doesn’t require any configuration, but offers more flexibility than Next.js.</p>
 </li>
 </ul>
+
+<hr>
+
 <h2 id="creating-a-toolchain-from-scratch"><a href="#creating-a-toolchain-from-scratch" aria-hidden="true" class="anchor"></a>Creating a Toolchain from Scratch</h2>
 <p>A JavaScript build toolchain typically consists of:</p>
 <ul>
@@ -378,6 +401,9 @@
 <p>It displays a heading saying “Hello, world!” on the page.</p>
 <p><a href="/redirect-to-codepen/hello-world" target="_blank" rel="noreferrer"><b>Try it on CodePen</b></a></p>
 <p>Click the link above to open an online editor. Feel free to make some changes, and see how they affect the output. Most pages in this guide will have editable examples like this one.</p>
+
+<hr>
+
 <h2 id="how-to-read-this-guide"><a href="#how-to-read-this-guide" aria-hidden="true" class="anchor"></a>How to Read This Guide</h2>
 <p>In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.</p>
 <blockquote>
@@ -386,12 +412,18 @@
 </blockquote>
 <p>This is the first chapter in a step-by-step guide about main React concepts. You can find a list of all its chapters in the navigation sidebar. If you’re reading this from a mobile device, you can access the navigation by pressing the button in the bottom right corner of your screen.</p>
 <p>Every chapter in this guide builds on the knowledge introduced in earlier chapters. <strong>You can learn most of React by reading the “Main Concepts” guide chapters in the order they appear in the sidebar.</strong> For example, <a href="/docs/introducing-jsx.html">“Introducing JSX”</a> is the next chapter after this one.</p>
+
+<hr>
+
 <h2 id="knowledge-level-assumptions"><a href="#knowledge-level-assumptions" aria-hidden="true" class="anchor"></a>Knowledge Level Assumptions</h2>
 <p>React is a JavaScript library, and so we’ll assume you have a basic understanding of the JavaScript language. <strong>If you don’t feel very confident, we recommend <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">going through a JavaScript tutorial</a> to check your knowledge level</strong> and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won’t have to feel like you’re learning both React and JavaScript at the same time.</p>
 <blockquote>
 <p>Note</p>
 <p>This guide occasionally uses some of the newer JavaScript syntax in the examples. If you haven’t worked with JavaScript in the last few years, <a href="https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c">these three points</a> should get you most of the way.</p>
 </blockquote>
+
+<hr>
+
 <h2 id="lets-get-started"><a href="#lets-get-started" aria-hidden="true" class="anchor"></a>Let’s Get Started!</h2>
 <p>Keep scrolling down, and you’ll find the link to the <a href="/docs/introducing-jsx.html">next chapter of this guide</a> right before the website footer.</p></div></div>
 </section>
